@@ -75,13 +75,47 @@ Reusable components with clear separation between UI and logic. Custom hooks han
 
 ## Future Scope
 
-**Product variants** — Support for size and color variants with variant-specific pricing, availability, and selection on PDP and in cart.
+### Authentication System
+- User signup and login (email/password and optional OAuth)
+- Persistent authentication (token-based with localStorage/cookies)
+- Protected routes (checkout, orders)
+- Sync local wishlist with backend on login (merge guest + user data)
+- Sync local cart with backend on login (preserve items and quantities)
+- User session handling and auto-login
+- Logout with state cleanup (clear sensitive data, retain optional local state)
+- Basic user profile management (name, email, address linkage)
 
-**Cart enhancements** — Variant-aware cart items, cleaner per-variant pricing breakdown, and inventory validation at checkout.
+### Product Variants
+- Support for size and color variants
+- Variant-specific pricing and availability
+- Variant selection on PDP
+- Variant-aware cart items
 
-**UI / UX improvements** — Image sliders on PDP, sidebar-based filter panel, improved media handling, and more refined micro-interactions.
+### Cart Enhancements
+- Cleaner pricing breakdown (per item, discounts, totals)
+- Inventory validation before checkout
+- Better loading and error states
 
-**Performance** — Debounced search, memoization for large datasets, and lazy loading optimizations for images and routes.
+### Checkout System
+- Complete checkout flow (cart → address → payment → confirmation)
+- Address management (add, edit, select delivery address)
+- Shipping method selection with dynamic pricing
+- Order summary with product, discount, and final pricing breakdown
+- Payment gateway integration (e.g., Razorpay / Stripe)
+- Order placement with success and failure handling
+- Order confirmation page
+- Basic order history tracking
+
+### UI / UX Improvements
+- Image sliders on PDP
+- Sidebar-based filter panel
+- Improved media handling
+- Better micro-interactions and animations
+
+### Performance
+- Debounced search
+- Memoization for large datasets
+- Lazy loading for images and routes
 
 ---
 
@@ -94,7 +128,5 @@ npm install
 # start dev server
 npm run dev
 ```
-
----
 
 **Author:** Pratham Chauhan
