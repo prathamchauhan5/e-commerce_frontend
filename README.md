@@ -118,7 +118,19 @@ Reusable components with clear separation between UI and logic. Custom hooks han
 - Lazy loading for images and routes
 
 ---
+## Tech Stack
 
+### Frontend
+- React
+- React Router
+
+### State Management
+- Zustand
+
+### Styling & UI
+- Tailwind CSS
+- shadcn/ui
+  
 ## Setup
 
 ```bash
