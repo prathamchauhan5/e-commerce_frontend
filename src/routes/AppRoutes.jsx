@@ -6,6 +6,7 @@ import Cart from "@/pages/Cart";
 import CategoryPage from "@/pages/CategoryPage";
 import SearchPage from "@/pages/SearchPage";
 import Wishlist from "@/pages/WishList";
+import NotFound from "@/pages/404";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
